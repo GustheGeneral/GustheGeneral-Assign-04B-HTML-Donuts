@@ -1,9 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<html lang="en">
+
+<head>
+  <!--Meta Data-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donut Order</title>
+  <meta author="Gustav Ihlenfeld">
+  <meta class="ICD2O - Technology and Innovations">
+</head>
+<!--Stylesheet-->
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+
+
+<!--favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+
+<body>
+  <!--Header-->
+  <h1><i><b>Skibidi Donuts</b></i></h1>
+  <h4>Creator : Gustav Ihlenfeld</h4>
+  <h4>Class : ICD2O</h4>
+
+  <!--Image-->
+  <img src="./images/donut.jpg" alt="donut" style="float: right; margin: 0 10px;">
+
+  <p><b><u>Welcome to Skibidi Donuts! Please select your order and follow the steps below:</u></b></p>
+
+  <p>1 - Order a donut size</p>
+  <p>2 - Select Toppings (Completely Optional)</p>
+  <p>3 - Select a side order (Drink)</p>
+  <p>4 - Checkout</p>
+
+  <!--Input for Donut Size-->
+  <label for="donut">Donut Size:</label>
+  <select name="donut" id="donut">
+    <option value="" selected disabled>--Donut Size--</option> <!-- Default option -->
+    <option value="mini">Mini Skibidi Donut</option>
+    <option value="regular">Regular Skibidi Donut</option>
+    <option value="ultra">Ultra Skibidi Donut</option>
+    <option value="golden">Golden Skibidi Donut</option>
+  </select>
+  <br><br>
+
+  <!--Input for Toppings-->
+  <label><b>Toppings: 🍩</b></label><br>
+  <input type="checkbox" id="chocolate" name="topping" value="chocolate">
+  <label for="chocolate">Skibidi Chocolate</label><br>
+  <input type="checkbox" id="strawberry" name="topping" value="strawberry">
+  <label for="strawberry">Skibidi Strawberry Swirl</label><br>
+  <input type="checkbox" id="almond" name="topping" value="almond">
+  <label for="almond">Skibidi Almond Vanilla</label><br>
+  <br>
+
+  <!--Input for Side Order (Drink)-->
+  <label for="drink">Side Order (Drink): ☕</label><br>
+  <input type="radio" id="coke" name="drink" value="coke">
+  <label for="coffee">Coke</label><br>
+  <input type="radio" id="tea" name="drink" value="tea">
+  <label for="tea">Hot Peach Tea</label><br>
+  <input type="radio" id="tea2" name="drink" value="tea2">
+  <label for="juice">Hot Chamomile Tea</label><br>
+  <br>
+
+  <!--Javascript function-->
+  <button onclick="donutCheck()">Submit</button>
+  <p id="sizeError" style="color: red;"></p>
+  <p id="drinkError" style="color: red;"></p>
+  <p id="result"></p> <!-- Display the result here -->
+  <script src="/js/script.js"></script>
+
+</body>
+
 </html>

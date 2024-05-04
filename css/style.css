@@ -1,4 +1,33 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Gustav I
+* Created on: May 4th, 2024
 * This file contains the CSS for index.html
 */
+
+h1 {
+  text-align: center;
+  background-color: hsl(0, 100%, 27%);
+  color: #ffff;
+  padding: 20px;
+  font-family: 'Dancing Script', cursive; /* Use Dancing Script font */
+}
+
+h4 {
+  text-align: center;
+  background-color: hsl(0, 100%, 27%);
+  color: #ffff;
+  padding: 10px;
+}
+
+p {
+  font-family: Consolas, monospace; /* Use Consolas font for paragraphs */
+}
+
+button {
+padding: 8px 16px;
+background-color: hsl(0, 100%, 27%);
+color: #fff;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+
+}
